@@ -6,17 +6,17 @@ struct Node {
 };
 Node* head = NULL;
 
-public void insert_at_beginning(int data);
-public void insert_at_end(int data);
-public void print_nodes();
+void insert_at_beginning(int data);
+void insert_at_end(int data);
+void print_nodes();
 
-public void insert_at_beginning(int data){
+void insert_at_beginning(int data){
     Node* temp = new Node;
     temp->data = data;
     temp->next = head;
     head = temp;
 }
-public void insert_at_end(int data){
+void insert_at_end(int data){
     Node* temp = new Node;
     temp->data = data;
     temp->next = NULL;
@@ -30,7 +30,7 @@ public void insert_at_end(int data){
         iter->next = temp;
     }
 }
-public void print_nodes(){
+void print_nodes(){
     Node* iter = head;
     while(iter->next != NULL){
         cout << iter->next << "\n";
