@@ -32,8 +32,8 @@ void insert_at_end(int data){
 }
 void print_nodes(){
     Node* iter = head;
-    while(iter->next != NULL){
-        cout << iter->next << "\n";
+    while(iter!= NULL){
+        cout << iter->data << "\n";
         iter = iter->next;
     }
 }
